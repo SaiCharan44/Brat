@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Electric Bill Management</title>
+    <link rel="stylesheet" href="paymentpage.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="userhomepage.html">Home</a></li>
+                <li><a href="paybill.html">Pay Bill</a></li>
+                <li><a href="registercomplainpage.html">Register Complaint</a></li>
+                <li><a href="complainstatus.html">Complaint Status</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li>Welcome, <span id="username">[Username]</span></li>
+                <li><a href="homepage.html" class="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Payment Details</h1>
+        <div class="payment-details">
+            <p><strong>Bill Amount:</strong> $<span id="bill-amount">100</span></p>
+            <p><strong>Total Payable Amount:</strong> $<span id="total-payable-amount">100</span></p>
+            <p><strong>PG Charge:</strong> $<span id="pg-charge">5</span></p>
+            <p><strong>Mode of Payment:</strong></p>
+            <div class="payment-mode">
+                <label>
+                    <input type="radio" name="payment-mode" value="debit" checked> Debit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment-mode" value="credit"> Credit Card
+                </label>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="payNow()">Pay Now</button>
+                <a href="home.html" class="back-home-button">Back to Home</a>
+            </div>
+        </div>
+    </main>
+    <script>
+        function payNow() {
+            alert('Payment functionality is not implemented yet.');
+        }
+        window.onload=displayname();
+    </script>
+</body>
+</html>
